@@ -9,9 +9,9 @@ resource "aws_s3_bucket" "data" {
     Name        = "${local.resource_prefix.value}-data"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "8cc464aa64cda556750cfc4a001c4f3aa632cc23"
+    git_commit           = "bde09b0d40410caba8ade790618362ae6b5d6dae"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2021-10-22 17:34:47"
+    git_last_modified_at = "2021-12-16 15:25:38"
     git_last_modified_by = "44179932+lcastrose@users.noreply.github.com"
     git_modifiers        = "44179932+lcastrose/nimrodkor"
     git_org              = "lcastrose"
