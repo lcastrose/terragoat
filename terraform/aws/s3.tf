@@ -45,14 +45,14 @@ resource "aws_s3_bucket" "financials" {
   # bucket does not have versioning
   bucket        = "${local.resource_prefix.value}-financials"
   acl           = "private"
-  force_destroy = false
+  force_destroy = true
   tags = merge({
     Name        = "${local.resource_prefix.value}-financials"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "67c883a934fa2693525804ab1667e5769c1cad39"
+    git_commit           = "584a365fb7033c74f20ceb57310d3bfe6c9d8ad7"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2021-10-22 14:12:23"
+    git_last_modified_at = "2022-05-13 14:18:38"
     git_last_modified_by = "44179932+lcastrose@users.noreply.github.com"
     git_modifiers        = "44179932+lcastrose/nimrodkor"
     git_org              = "lcastrose"
