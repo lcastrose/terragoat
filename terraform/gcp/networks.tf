@@ -21,7 +21,7 @@ resource "google_compute_firewall" "allow_all" {
   network       = google_compute_network.vpc.id
   source_ranges = ["0.0.0.0/0"]
   allow {
-    protocol = "tcp"
+    protocol = "udp"
     ports    = ["0-65535"]
   }
 }
