@@ -4,14 +4,14 @@ resource "aws_s3_bucket" "data" {
   # bucket does not have access logs
   # bucket does not have versioning
   bucket        = "${local.resource_prefix.value}-data"
-  force_destroy = false
+  force_destroy = true
   tags = merge({
     Name        = "${local.resource_prefix.value}-data"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "b1acc1ac9ee9c316616f2364c7a70c4804da4590"
+    git_commit           = "8569b85446cc46b0ff1ce7dd58f946220a92fdc1"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2022-06-07 16:14:53"
+    git_last_modified_at = "2022-09-28 20:36:04"
     git_last_modified_by = "44179932+lcastrose@users.noreply.github.com"
     git_modifiers        = "44179932+lcastrose/nimrodkor"
     git_org              = "lcastrose"
