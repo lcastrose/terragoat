@@ -21,6 +21,7 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "lcastrose"
     git_repo             = "terragoat"
     yor_trace            = "06c9d400-0e01-4425-868e-d1752957eb0f"
+    yor_name             = "ssh_traffic"
   }
 }
 
@@ -38,6 +39,7 @@ resource "aws_instance" "web_server_instance" {
     git_org              = "lcastrose"
     git_repo             = "terragoat"
     yor_trace            = "a83ed2aa-ecf3-4e37-af28-8402e7316db9"
+    yor_name             = "web_server_instance"
   }
 }
 
